@@ -37,5 +37,11 @@ export const ProfileSchema = {
       type: 'array',
       of: [{type: 'reference', to: [{type: 'customLink'}]}],
     },
+    {
+      name: 'resumes',
+      title: 'Resumes',
+      type: 'array',
+      of: [{type: 'reference', to: [{type: 'resume'}]}],
+    }
   ],
 }
